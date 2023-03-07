@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:movie_app_assignment/strings/strings.dart';
 import 'package:movie_app_assignment/ui/now_playing_list.dart';
 import 'package:movie_app_assignment/ui/trending_list.dart';
 
@@ -32,14 +33,17 @@ class _MyHomePageState extends State<MyHomePage> {
                 Container(
                     margin: const EdgeInsets.only(top: 63, left: 33.3),
                     child: const Text(
-                      "Trending",
-                      style: TextStyle(color:  Color(0xFF0D0447),fontSize: 30, fontWeight: FontWeight.bold),
+                      Strings.trending,
+                      style: TextStyle(
+                          color: Color(0xFF0D0447),
+                          fontSize: 30,
+                          fontWeight: FontWeight.bold),
                     )),
                 Container(
                     margin: const EdgeInsets.only(top: 63, right: 33.3),
                     child: const Text(
-                      "See All",
-                      style: TextStyle(color:  Color(0xFF618CFF),fontSize: 20),
+                      Strings.seeAll,
+                      style: TextStyle(color: Color(0xFF618CFF), fontSize: 20),
                     )),
               ],
             ),

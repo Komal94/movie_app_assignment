@@ -3,6 +3,7 @@ import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:intl/intl.dart';
 import 'package:movie_app_assignment/model/movie_model.dart';
 import 'package:movie_app_assignment/repository/movie_service.dart';
+import 'package:movie_app_assignment/strings/strings.dart';
 import 'package:movie_app_assignment/ui/similar%20movies.dart';
 
 class MovieDetailScreen extends StatefulWidget {
@@ -96,7 +97,7 @@ class _MovieDetailScreenState extends State<MovieDetailScreen> {
                           Container(
                             width: 240,
                             child: Text(
-                              "Language: ${movieData?.originalLanguage == "en" ? "English" : ""}",
+                              "${Strings.language}: ${movieData?.originalLanguage == "en" ? "English" : ""}",
                               style: TextStyle(
                                   fontSize: 20.0, color: Color(0xFF9E9CB1)),
                             ),
@@ -107,7 +108,7 @@ class _MovieDetailScreenState extends State<MovieDetailScreen> {
                           Container(
                               width: 240,
                               child: Text(
-                                "Release Date: ${formatter.format(dateTime)}",
+                                "${Strings.releaseDate}: ${formatter.format(dateTime)}",
                                 style: TextStyle(
                                     fontSize: 20.0, color: Color(0xFF9E9CB1)),
                               )),
@@ -115,7 +116,7 @@ class _MovieDetailScreenState extends State<MovieDetailScreen> {
                           Container(
                               width: 240,
                               child: Text(
-                                "Overview",
+                                "${Strings.overview}",
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     fontSize: 20.0,
@@ -134,7 +135,7 @@ class _MovieDetailScreenState extends State<MovieDetailScreen> {
                           Container(
                               width: 240,
                               child: Text(
-                                "Production House",
+                                "${Strings.productionHouse}",
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     fontSize: 20.0,
@@ -181,7 +182,7 @@ class _MovieDetailScreenState extends State<MovieDetailScreen> {
                                     // Do something when button is pressed
                                   },
                                   child: Text(
-                                    'Cast',
+                                    '${Strings.cast}',
                                     style: TextStyle(
                                       color: Colors.white,
                                       fontSize: 20.0,
@@ -201,7 +202,7 @@ class _MovieDetailScreenState extends State<MovieDetailScreen> {
                                     // Do something when button is pressed
                                   },
                                   child: Text(
-                                    'Review',
+                                    '${Strings.review}',
                                     style: TextStyle(
                                       color: Colors.white,
                                       fontSize: 20.0,
@@ -217,7 +218,7 @@ class _MovieDetailScreenState extends State<MovieDetailScreen> {
                           Container(
                               width: 240,
                               child: Text(
-                                "Similar Movies",
+                                "${Strings.similarMovie}",
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     fontSize: 20.0,
