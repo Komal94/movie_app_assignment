@@ -11,6 +11,10 @@ A few resources to get you started if this is your first Flutter project:
 - [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Features Integrated:
+
+1. Home screen with NowPlaying and trending list.
+2. NowPlaying list in Horizontal direction and trending list in vertical direction.
+3. Pagination implemented for vertical list.
+4. Movie detail screen with animation.
+5. For animation HERO is used.
